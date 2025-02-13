@@ -1,0 +1,104 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b27171; 
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url("hero-image.jpg"); 
+    background-size: cover;
+    color: rgb(10, 11, 11);
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #3c7f83; 
+    cursor: pointer;
+}
+
+.featured-dishes {
+    padding: 40px;
+    text-align: center;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.dish {
+    border: 1px solid #9944c1;
+    padding: 20px;
+    text-align: left; 
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dish-details {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
